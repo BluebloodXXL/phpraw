@@ -68,13 +68,27 @@ body {
     color: #000;
 }
 
-.mainSection .logoContainer {
+.mainSection .logoContainer .logoContainerC{
 	width: 220px;
 	text-align: center;
 }
 
 .logoContainer img {
 	width: 100%;
+}
+
+.logoContainerS{
+	width: 150px;
+}
+
+.logoContainerS img {
+	width: 60%;
+	padding-left: 25px;
+}
+
+.logoContainerC img {
+	padding-top: 150px;
+	margin-bottom: -300px;
 }
 
 .header {
@@ -87,7 +101,7 @@ body {
 	align-items: center;
 }
 
-.headerContent .logoContainer {
+.headerContent .logoContainer .logoContainerC{
 	width: 150px;
 	padding: 5px 20px;
 	box-sizing: border-box;

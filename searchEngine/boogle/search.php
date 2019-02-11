@@ -35,7 +35,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 			<div class="headerContent">
 
-				<div class="logoContainer">
+				<div class="logoContainerS">
 					<a href="index.php">
 						<img src="assets/images/boogleLogo.png">
 					</a>

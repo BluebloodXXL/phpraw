@@ -213,12 +213,18 @@ if (isset($_GET['id'])) {
     }
 }
 elseif (logged_in_Admin()) {
+    if (isset($_SESSION['id'])){
+        redirect("adminHome.php");
+    }
+
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
 
-
-        if ($id == 11)
+        if ($id == 11 )
             redirect("adminHome.php");
+
+
+
 
         $sql = "SELECT * FROM users WHERE id = '$id'";
         $result = query($sql);

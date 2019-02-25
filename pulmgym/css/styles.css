@@ -24,6 +24,7 @@ body {
 }
 .panel-login>.panel-heading a.active{
 	color: #029f5b;
+	/*color: #59380d;*/
 	font-size: 18px;
 }
 .panel-login>.panel-heading hr{

@@ -1,0 +1,620 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>HRMS User Guide V 1.2</title>
+
+        <meta name="description" content="dfgfdgfdg">
+        <meta name="author" content="FratelloneIT">
+        <meta name="copyright" content="FratelloneIT">
+        <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+        <meta name="date" content="2015-04-04T00:00:00+02:00">
+
+        <link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/jquery.scrollTo.js"></script>
+        <script src="assets/js/jquery.easing.js"></script>
+        <script>document.createElement('section');
+            var duration = '500', easing = 'swing';</script>
+        <script src="assets/js/script.js"></script>
+        <style>
+            html{background-color:#EEEEEE;color:#383838;}
+            ::-moz-selection{background:#333636;color:#00DFFC;}
+            ::selection{background:#333636;color:#00DFFC;}
+            #documenter_sidebar #documenter_logo{background-image:url(logo.png);}
+            a{color:#008C9E;}
+            .btn {
+                border-radius:3px;
+            }
+            .btn-primary {
+                background-image: -moz-linear-gradient(top, #008C9E, #006673);
+                background-image: -ms-linear-gradient(top, #008C9E, #006673);
+                background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+                background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+                background-image: -o-linear-gradient(top, #008C9E, #006673);
+                background-image: linear-gradient(top, #008C9E, #006673);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+                border-color: #006673 #006673 #bfbfbf;
+                color:#FFFFFF;
+            }
+            .btn-primary:hover,
+            .btn-primary:active,
+            .btn-primary.active,
+            .btn-primary.disabled,
+            .btn-primary[disabled] {
+                border-color: #008C9E #008C9E #bfbfbf;
+                background-color: #006673;
+            }
+            hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+            #documenter_sidebar, #documenter_sidebar ul a{background-color:#2C3E50;color:#FFFFFF;}
+            #documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+            #documenter_sidebar ul{border-top:1px solid #212424;}
+            #documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+            #documenter_sidebar ul a:hover{background:#22313F;color:#00DFFC;border-top:1px solid #333636;}
+            #documenter_sidebar ul a.current{background:#22313F;color:#00DFFC;border-top:1px solid #333636;}
+            #documenter_copyright{display:block !important;visibility:visible !important;}
+            .preview
+            {
+                max-height:600px;
+                -webkit-box-shadow:0 0px 15px 0 rgba(0,0,0,0.1);
+                -moz-box-shadow:0 0px 15px 0 rgba(0,0,0,0.1);
+                box-shadow:0 0px 15px 0 rgba(0,0,0,0.1);
+                clear: both;
+                margin: 20px 20px;
+            }
+        </style>
+
+    </head>
+    <body class="documenter-project-the-invoicer">
+        <div id="documenter_sidebar">
+            <br/>
+            <center>
+                <a href="#documenter_cover">
+                    <img src="assets/img/hrm_logo.png" width="60" ><br/>
+
+                </a>                
+            </center>
+
+            <!-- Navigation Start-->
+            <ul id="documenter_nav">
+                <li><a class="current" href="#start">Start</a></li>
+                <li><a href="#features" title="Features">Features</a></li>
+                <li><a href="#install" title="intro">Installation</a></li>
+                <li><a href="#login" title="intro">Initial Login Details</a></li>
+                <li><a href="#admin_account" title="Admin_Account">Admin Account</a></li>
+                <li><a href="#settings" title="Settings">Settings</a></li>
+                <li><a href="#department" title="Department">Department</a></li>
+                <li><a href="#employee" title="Employee_Management">Employee</a></li>
+                <li><a href="#attendance" title="Attendance_Management">Attendance</a></li>
+                <li><a href="#application" title="Applicaiton_List">Application List</a></li>
+                <li><a href="#payroll" title="Payroll_Management">Payroll</a></li>
+                <li><a href="#expense" title="Expense_Management">Expense</a></li>
+                <li><a href="#mailbox" title="Mailbox">Mailbox</a></li>
+                <li><a href="#notice" title="Notice_Management">Notice</a></li>
+                <li><a href="#backup" title="Database_Backup">Database Backup</a></li>
+                <li><a href="#employee_account" title="Employee_Account">Employee Account</a></li>
+                <li><a href="#source_code" title="Source_Code">Source Code Structure</a></li>
+                <li><a href="#customer_support" title="Customer_Support">Customer Support</a></li>
+            </ul>
+            <!-- Navigation End-->
+            <div id="documenter_copyright">&COPY; Fratellone IT Solutions Ltd 2015<br>
+
+            </div>
+        </div>
+
+        <!-- Home Section Start-->
+        <div id="documenter_content">
+            
+            <section id="start">
+                <h1>HRMS V-1.2</h1>
+                <h2>Human Resource Management System V-1.2</h2>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Support :</td>
+                        <td><a href="mailto:support@fratelloneit.com">support@fratelloneit.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Developer :</td>
+                        <td><a href="http://fratelloneit.com/">Fratellone IT Solutions LTD</a></td>
+                    </tr>                    
+                </table>                
+                <hr>
+                <p>
+                    Thank you for your interest in HRMS.<br />
+                    Please read carefully the complete documentation before starting.
+                </p>                
+                <img src="assets/img/login_screen.png" class="screenshot-image">               
+            </section>
+
+            <!-- Home Section End -->
+
+
+            <!-- Features Section Start -->
+            <section id="features">
+                <div class="page-header"><h3>Key Features:</h3><hr class="notop"></div>
+                <ul>
+                    <li>Mobile compatible.</li>
+                    <li>Multi language support.</li>
+                    <li>Admin and Employee panel.</li>
+                    <li>Beautiful Dashboard.</li>
+                    <li>Set working days, holidays and create events.</li>                    
+                    <li>Upcoming birthday notification.</li>                    
+                    <li>Control you notification settings.</li>
+                    <li>Department, designation management</li>
+                    <li>Complete employee management.</li>            
+                    <li>View employee list.</li>
+                    <li>Employee attendance management.</li>            
+                    <li>Attendance report monthly or yearly in PDF, Excel file.</li>
+                    <li>Generate attendance report.</li>                    
+                    <li>Receive, accept or reject applications.</li>
+                    <li>Complete payroll management.</li>
+                    <li>Set employee salary details.</li>
+                    <li>Make payment.</li>
+                    <li>Generate payslip.</li>
+                    <li>Create and manage notice board.</li>
+                    <li>Complete expense management.</li>                    
+                    <li>Add or manage expenses.</li>                    
+                    <li>Configure personalized mailbox.</li>
+                    <li>Receive and send email.</li>
+                    <li>Save email as draft for later use.</li>
+                    <li>Database backup</li>
+                </ul>     
+                <br />               
+            </section>
+            <!-- Features Section End -->
+
+
+            <!-- Installation Section start -->
+            <section id="install">
+                <div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+                <h2>Installation Process</h2>
+                <ul>
+                    <li>Unzip the downloaded folder</li>
+                    <li>Copy the files inside the zip folder : "Human_Resource_Management_System" into your server</li>
+                    <li>The auto web installer will start</li>
+                    <li>Make sure <em>application/config/database.php</em> to be writtable</li>
+                    <li>Enter your database settings</li>
+                    <li>Press the "Install" button.</li>
+                    <li>That's it!</li>
+                </ul>
+                <img src="assets/img/install.png">
+            </section>
+            <!-- Installation Section End -->
+
+            <!-- Initial Login Details Start -->
+
+            <section id="login">
+                <div class="page-header"><h3>Initial Login Details:</h3><hr class="notop"></div>
+                <br />
+                <table class="login_table">
+                    <tr>
+                        <th><p>Admin Panel Login</p></th>
+                    <th><p>Employee Panel Login</p></th>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1px solid #3a87ad;">                           
+                            <p><strong>Username : </strong> admin</p>
+                            <p><strong>Password : </strong> admin</p>
+                        </td>
+                        <td>
+                            <p><strong>Username : </strong> employee</p>
+                            <p><strong>Password : </strong> employee</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Initial Login Details End -->
+
+            <!-- Admin Account Section Start -->
+            <section id="admin_account">
+                <div class="page-header"><h3>Admin Account</h3><hr class="notop"></div>
+                <ul>
+                    <li>Manage general setting and information of your company.</li>
+                    <li>Set working days.</li>
+                    <li>Create leave category according to your need.</li>
+                    <li>Set notification settings.</li>
+                    <li>Create holiday list and manage holidays.</li>
+                    <li>Select language settings.</li>                    
+                    <li>Create department and set designation under department.</li>
+                    <li>Add, update or delete employee.</li>
+                    <li>Set employee salary details.</li>
+                    <li>Give employee awards.</li>
+                    <li>Manage employee attendance with intelligent attendance mangaement system.</li>
+                    <li>Generate attendance report monthly or yearly in PDF, Excel file.</li>
+                    <li>Set application category.</li>
+                    <li>View, set status to employees application.</li>
+                    <li>Interactive and intelligent payroll management.</li>
+                    <li>Set employee salary details and type.</li>
+                    <li>View update employee salary list if required.</li>
+                    <li>Make payment of employee salary.</li>
+                    <li>Generate payslip of salary for employees.</li>
+                    <li>Expense management of company.</li>
+                    <li>Create and manage expense category.</li>
+                    <li>Add expense amount and bill copy to track expenses.</li>
+                    <li>View and generate PDF of monthly, yearly expense report.</li>
+                    <li>Configure and update personal email in mailbox.</li>
+                    <li>View inbox and compose new email.</li>
+                    <li>View sent mails and save email as draft.</li>
+                    <li>Generate and maintain notice board.</li>                    
+                </ul>
+                <br />
+                <img src="assets/img/dashboard.png" class="screenshot-image">
+                <p>Admin Dashboard screen dump.</p>
+                <br /><br />
+                <img src="assets/img/general_settings.png" class="screenshot-image">
+                <p>General Settings screen dump.</p>
+                <br /><br />
+                <img src="assets/img/holiday_list.png" class="screenshot-image">
+                <p>Holiday List screen dump.</p>
+                <br /><br />
+                <img src="assets/img/language_support.png" class="screenshot-image">
+                <p>Language Support screen dump.</p>
+                <br /><br />
+                <img src="assets/img/mailbox.png" class="screenshot-image">
+                <p>Mailbox screen dump.</p>
+                <br /><br />
+                <img src="assets/img/add_employee.png" class="screenshot-image">
+                <p>Add Employees screen dump.</p>
+                <br /><br />
+                <img src="assets/img/attendance_report.png" class="screenshot-image">
+                <p>Attendance Report screen dump.</p>
+                <br /><br />
+                <img src="assets/img/make_payment.png" class="screenshot-image">
+                <p>Payroll - Make Payment screen dump.</p>
+                <br /><br />
+                <img src="assets/img/expense_report.png" class="screenshot-image">
+                <p>Expense Report screen dump.</p>
+              
+            </section>
+            <!-- Admin Account Section Start -->
+
+            
+            <!-- Settings Section Start -->
+            <section id="settings">
+                <div class="page-header"><h3>General Settings</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    The tab settings is for to setup basic business information you possess. In settings you
+                    can set your company name, logo and contact details. You can also set currency type - which
+                    will be displayed in your transactions.
+                </p>
+                <ul>
+                    <li>Set Working Days
+                        <p style="text-align: justify;; width: 700px;">You can set, update your working days of your organization.</p>
+                    </li>
+                    <li>Leave Category
+                        <p style="text-align: justify;; width: 700px;">You can add different types of leave category and can maintain leave applications under each category.</p>
+                        
+                    </li>
+                    <li>Holiday List
+                        <p style="text-align: justify;; width: 700px;">You can easily add, update holiday list of your organization. Holiday list will help you to monitor and understand
+                        easily about employee attendance.</p>
+                    </li>
+                    <li>Language Settings
+                        <p style="text-align: justify;; width: 700px;">You can choose language and then activate form general settings. You can also input new language from language settings.</p>
+                    </li>
+                    <li>Notification Settings
+                        <p style="text-align: justify;; width: 700px;">You can easily switch ON or OFF for different notification criteria to get notified or not.<br /> This enhance user experience
+                            and will keep you updated and hassle free.</p>
+                    </li>
+                </ul>
+                <br />
+                <img src="assets/img/set_working_days.png" class="screenshot-image">
+            </section>
+            <!-- Settings Section End -->            
+            
+            
+            <!-- Department Section Start -->
+            <section id="department">
+                <div class="page-header"><h3>Department</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    The tab department will let you add, update or delete departments and underlying designations in that department.
+                </p>
+                <ul>
+                    <li>Add Department
+                        <p style="text-align: justify;; width: 700px;">You can add, update department name according to your need. During department add - you can also create 
+                        designations that will lie under that department. You can create as much department as you require and as 
+                        many designations as you want under any department.</p>
+                    </li>
+                    <li>Department List
+                        <p style="text-align: justify;; width: 700px;">You can view all department and their underlying designations at a glance from this tab.</p>                       
+                    </li>                    
+                </ul>
+                <br />
+                <img src="assets/img/department_list.png" class="screenshot-image">
+            </section>
+            <!-- Department Section End -->
+                        
+            
+            <!-- Employee Section Start -->
+            <section id="employee">
+                <div class="page-header"><h3>Employee</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    The Employee tab will let you add, update or delete employee and their related information along with documents and 
+                    bank details as required by your organization.
+                </p>
+                <ul>
+                    <li>Add Employee
+                        <p style="text-align: justify;; width: 700px;">Add new employee according to your company employee id and with employee's personal and professional information.
+                        You can also keep an employees all related documents and place him / her under a department and designation.
+                        You can also keep employee's photo and bank information.
+                        </p>
+                    </li>
+                    <li>Employee List
+                        <p style="text-align: justify;; width: 700px;">You can view all employee according to department and their related designations at a glance from this tab.</p>                        
+                    </li>                    
+                    <li>Employee Award
+                        <p style="text-align: justify;; width: 700px;">Give your employees awards you want or they deserve form your organization as an inspiration. You can set employee <br />
+                           gift items they will get and if required you can also set amount of money they deserve from their awards.</p>                        
+                    </li>                    
+                </ul>
+                <br />
+                <img src="assets/img/employee_list.png" class="screenshot-image">
+            </section>
+            <!-- Employee Section End -->
+            
+            
+            <!-- Attendance Section Start -->
+            <section id="attendance">
+                <div class="page-header"><h3>Attendance</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    The Attendance tab will let you add, update or delete employee attendance in a daily basis. If any employee is absent you 
+                    can easily set a leave category you created to understand the cause of an employees absence. Attendance Management is very easy 
+                    to operate and you can at a time give attendance to your whole department.
+                </p>
+                <ul>
+                    <li>Manage Attendance
+                        <p style="text-align: justify;; width: 700px;">By using this tab you can add attendance and can easily get to previous attendance dates and get the attendance report at a glance.
+                           You can easily at a time set attendance of all your employees very easily - which is a very useful requirement for any attendance management.
+                        </p>
+                    </li>
+                    <li>Attendance Report
+                        <p style="text-align: justify;; width: 700px;">In attendance report you can easily view all attendance of any particular department month wise. You can easily select department
+                        and the month of any particular year you want to view then just click GO. A beautiful attractive attendance report will be displayed
+                        which you can also download as PDF or Excel file format and if required print out.
+                        </p>                        
+                    </li>                                                            
+                </ul>
+                <br />
+                <img src="assets/img/attendance.png" class="screenshot-image">
+            </section>
+            <!-- Attendance Section End -->
+            
+            
+            <!-- Application List Section Start -->
+            <section id="application">
+                <div class="page-header"><h3>Application List</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    In Application List a listing of all employees who sent application to management or HR will be displayed. 
+                    You can easily view application details and cause or category of the application and can set status for any application.
+                    Status can be of two kind - Accepted or Rejected. When any application is received a notification will pop up in the 
+                    admin dashboard and from there you can easily get overview of the applicant and the application reason. 
+                    After you take any action - accept the application or reject it - employee will get notified in their own panel about your action.
+                </p>               
+                <br />
+                <img src="assets/img/application_list.png" class="screenshot-image">
+            </section>
+            <!-- Application List Section End -->
+            
+            
+            <!-- payroll Section Start -->
+            <section id="payroll">
+                <div class="page-header"><h3>Payroll Management</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    In payroll management you can easily manage and pay employees their relative salary and get notified about up-coming salary payments
+                    and already paid salaries. You can also generate and maintain payslip for each employees.
+                </p>
+                <ul>
+                    <li>Manage Salary Details
+                        <p style="text-align: justify;; width: 700px;">By using this tab you can manage salary structure along with employee type (provisional or permanent). You can also set allowances 
+                            that any employee will get and can also set different deduction types and amount that will be deducted from his salary total. 
+                            This is very important tab as because the system will calculate employees salary according to the data you provide here in this salary details tab.
+                        </p>
+                    </li>
+                    <li>Employee Salary List
+                        <p style="text-align: justify;; width: 700px;">From this tab you can easily monitor salary according to department that each employee is receiving. You can also easily jump back to salary 
+                            details tab from here and can update any data required.
+                        </p>                        
+                    </li>                                                            
+                    <li>Make Payment
+                        <p style="text-align: justify;; width: 700px;">From this tab you can easily make payment for any employee required. You can also view his / her previous payment records during
+                            payment and will get notified if any payment is already done and you trying to pay it again. HRMs will automatically calculate 
+                            employees payment structure and will let you know the total payable and will take payment ways you are paying an employee.                            
+                        </p>                        
+                    </li>                                                            
+                    <li>Generate Payslip
+                        <p style="text-align: justify;; width: 700px;">You can easily generate payslip against any paid salary for an employee. Payslip can be printed or downloaded as PDF for later
+                            reference. Payslip will make your employees happy and to provide payslip so easily you will be relieved. 
+                        </p>                        
+                    </li>                                                            
+                </ul>
+                
+                <br />
+                <img src="assets/img/payroll.png" class="screenshot-image">
+            </section>
+            <!-- payroll Section End -->
+            
+            
+            <!-- Expense Section Start -->
+            <section id="expense">
+                <div class="page-header"><h3>Expense Management</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    In expense management you can easily configure expense categories that your expense take place in your organization. 
+                    You can easily add new expenses produced by which employee and can keep track of your total expensed month wise.
+                </p>
+                <ul>
+                    <li>Category
+                        <p style="text-align: justify;; width: 700px;">By using this tab you can create, update and maintain expense category that normally take place in your organization. After 
+                            creating expense category you can easily place expenses under these categories and later will help you get report 
+                            of expenses category wise.
+                        </p>
+                    </li>
+                    <li>Add Expenses
+                        <p style="text-align: justify;; width: 700px;">From here you can easily add new expenses that took place and the amount spent on which item and under what category. 
+                           You can also select employee who produced this expense and also attach the bill copy for later reference.
+                        </p>                        
+                    </li>                                                            
+                    <li>Expense Report
+                        <p style="text-align: justify;; width: 700px;">You can easily view total expense report according to month and can download PDF if required or can also print out report.                            
+                        </p>                        
+                    </li>                                                                                
+                </ul>                
+                <br />
+                <img src="assets/img/expense_report.png" class="screenshot-image">
+            </section>
+            <!-- Expense Section End -->
+            
+                       
+            <!-- Mailbox Section Start -->
+            <section id="mailbox">
+                <div class="page-header"><h3>Mailbox</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    In mailbox you can easily set your email address and it will be automatically configured. You will start receiving mails and 
+                    you can also send mails to anyone you want. Mailbox is an essential features and is a must for any human resource management.
+                    You can also save mails as draft for later sending. You can easily compose new mails from both inbox, sent or draft.
+                </p>
+                <ul>
+                    <li>Inbox</li>
+                    <li>Sent</li>                                                            
+                    <li>Draft</li>                                                                                
+                </ul>                
+                <br />
+                <img src="assets/img/mailbox.png" class="screenshot-image">
+            </section>
+            <!-- Mailbox Section End -->
+            
+            
+            <!-- Notice Section Start -->
+            <section id="notice">
+                <div class="page-header"><h3>Notice</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    From notice tab you can easily create and publish or un-publish notice for your organization. New notices will be shown 
+                    at top in the notice pan and you can also view notice individually to print them out if required. A robust and beautiful
+                    editor is provided so that you can format your text and produce beautiful notice if you see necessary.
+                </p>                                
+                <br />
+                <img src="assets/img/add_notice.png" class="screenshot-image">
+            </section>
+            <!-- Notice Section End -->
+            
+            
+            <!-- Database Section Section Start -->
+            <section id="backup">
+                <div class="page-header"><h3>Database Backup</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    You can easily take backup of your database by simply clicking on the menu tab Database Backup. Everything in your database will get in the 
+                    database that will be exported as a zip file in your local directory. 
+                </p>                                
+                <br />
+                <img src="assets/img/database_backup.png" class="screenshot-image">
+            </section>
+            <!-- Database Section Section End -->
+            
+            
+            <!-- Employee Account Start -->
+            <section id="employee_account">
+                <div class="page-header"><h3>Employee Account</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;">
+                    Each employee of your organization will get a beautiful employee panel after they login to the system. Employees can perform 
+                    the following tasks from their panel:                
+                </p>
+                <p style="text-align: justify;; width: 800px;">
+                    The default username and password for every new employee are:
+                </p>
+                <ul>
+                    <li><strong>Username:</strong> Employee ID (The ID you provide from admin panel for each employee)</li>
+                    <li><strong>Password:</strong> employee (By default it is set to employee)</li>
+                </ul>
+                <p style="text-align: justify;; width: 800px;">
+                    After employee login to their panel using this login credentials - they can easily update thir own password as 
+                    required. 
+                </p>
+                
+                <ul>
+                    <li>Submit new application</li>
+                    <li>View previous applied applications</li>
+                    <li>Get notified of his / her applied applications</li>
+                    <li>Send or receive new mails.</li>
+                    <li>View inbox and sent items.</li>                                        
+                    <li>View Recent Notice</li>
+                    <li>View Up coming Events</li>
+                    <li>View his / her personal information</li>
+                    <li>View holiday list</li>
+                    <li>View award list.</li>                    
+                </ul>                                
+                <br />
+                <img src="assets/img/employee_panel.png" class="screenshot-image">
+                <p>Employee Dashboard screen dump.</p>
+                <br /><br />
+                <img src="assets/img/employee_inbox.png" class="screenshot-image">
+                <p>Employee Mailbox - Inbox screen dump.</p>
+                <br /><br />
+                <img src="assets/img/employee_applications.png" class="screenshot-image">
+                <p>Application applied screen dump.</p>
+                <br /><br />
+                <img src="assets/img/employee_notice.png" class="screenshot-image">
+                <p>Notice List screen dump.</p>
+                <br /><br />
+                <img src="assets/img/employee_awards.png" class="screenshot-image">
+                <p>Awards received screen dump.</p>
+                <br /><br />
+                <img src="assets/img/employee_password.png" class="screenshot-image">
+                <p>Password Update screen dump.</p>
+                <br /><br />
+                <img src="assets/img/employee_profile.png" class="screenshot-image">
+                <p>View Personal Profile screen dump.</p>
+            </section>
+            <!-- Employee Account End -->
+
+
+            <!-- Source Code Section Start -->
+            <section id="source_code">
+                <div class="page-header"><h3>Source Code Structure</h3><hr class="notop"></div>
+                <ul>
+                    <li>Build up on powerful  codeigniter  php framework.</li>
+                    <li>For more info on codeigniter , go to :  http://codeigniter.com/user_guide/</li>
+                    <li>Follows MVC model.</li>
+                </ul>
+                <h5>Included Files:</h5>
+                <ul>
+                    <li>Login php controller : application/controllers/login.php</li>
+                    <li>Data models in php file : application/models/ directory</li>
+                    <li>Configuration files : application/config/config.php</li>
+                    <li>Admin controller : application/controllers/admin/ directory</li>
+                    <li>Admin view files : application/views/admin/  directory</li>
+                    <li>Employee controller : application/controllers/employee/ directory</li>
+                    <li>Employee view files : application/views/employee/  directory</li>
+                    <li>Template css files : assets/css/   directory</li>
+                    <li>Template font files : assets/fonts/   directory</li>
+                    <li>Template js files : assets/js   directory</li>
+                    <li>Template image files : assets/img/   directory</li>
+                    <li>Employee Profile images uploaded in : img/uploads/ directory</li>
+                </ul>
+                <br />
+            </section>
+            <!-- Source Code Section Start -->
+
+            
+            <!-- Support Section Start -->
+            <section id="customer_support">
+                <div class="page-header"><h3>Customer Support</h3><hr class="notop"></div>
+                <p style="text-align: justify;; width: 800px;"> Fratellone IT Solutions LTD is always ready to serve its valued clients.
+                    For any kind of after sales support or customization - Don't hesitate to contact us at: <br /><br />
+                    E-Mail: <a href="mailto:support@fratelloneit.com">support@fratelloneit.com</a><br />
+                    Skype: <a href="skype:fratelloneit?call">fratelloneit</a>
+                </p>
+                <br />
+                <a href="http://fratelloneit.com/" target="_blank"><img src="assets/img/fratelloneit.png"></a>                
+                <img src="assets/img/rate_us.jpg" alt="rate_us" class="rate-us" >
+            </section>
+            <!-- Support Section End -->
+        </div>
+    </body>
+</html>

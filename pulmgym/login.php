@@ -1,6 +1,8 @@
-<?php include("includes/header.php") ?>
-<?php if(logged_in()) redirect("index.php") ?>
-<?php if(logged_in_Admin()) redirect("index.php") ?>
+<?php include("includes/header.php");
+if(logged_in()) redirect("alreadyLogged.php");
+elseif(logged_in_Admin()) redirect("alreadyLogged.php");
+else validate_user_login();
+?>
 
 	
 
@@ -8,7 +10,7 @@
 		<div class="col-lg-6 col-lg-offset-3">
 
 	        <?php display_message(); ?>
-            <?php validate_user_login(); ?>
+            <?php// validate_user_login(); ?>
 								
 		</div>
 	</div>

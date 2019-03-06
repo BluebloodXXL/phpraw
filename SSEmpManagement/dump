@@ -1,0 +1,3 @@
+<?php if (logged_in_Admin()) { ?>
+                            <!--<button class="btn btn-warning"></button>    <button class="btn btn-danger"></button>-->
+                            <?php } ?>

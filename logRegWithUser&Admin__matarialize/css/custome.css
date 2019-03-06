@@ -1,0 +1,6 @@
+.customBox{
+    display: flex;
+    flew-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
